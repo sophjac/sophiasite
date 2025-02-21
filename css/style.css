@@ -26,11 +26,6 @@ h1 {
     text-align: center;
 }
 
-.section-content-4 h1 {
-    padding: 20px;
-    font-size: 20px;
-}
-
 #main-page h1 {
     background-color: rgb(131, 160, 250);
     opacity: 0.8;
@@ -56,11 +51,10 @@ body {
 }
 
 .active {
-    color: rgb(5, 5, 61);
+    color: blue;
     text-decoration: underline;
-    text-decoration-color: rgb(93, 0, 255);
+    text-decoration-color: blue;
 }
-
 
 
 nav ul {
@@ -76,6 +70,7 @@ nav li {
     /* display: inline; */
     line-height: 2;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav a {
@@ -88,7 +83,8 @@ nav a {
 
 nav li:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(85, 166, 236);
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 2px;
     /* border: 3px solid white; */
 }
 
@@ -107,17 +103,46 @@ nav li:hover {
     top: 0;
 }
 
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+  }
+
 footer {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Acme', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(194, 176, 226);
-    border: 3px solid white;
     color: rgb(29, 26, 54);
     /* begins in row 7 and spans 1 row */
     /*Can you rewrite it?*/
     padding: 10px;
     text-align: center;
+    text-decoration-color: black;
     line-height: 1.5;
 }
+
+footer a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+footer a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+ footer a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+footer a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 #main-page {
     background-attachment: fixed;
